@@ -8,7 +8,7 @@
 <body>
   <div id="mapid"></div>
   <div id="hoverbox">
-    <input id="infobox" />
+    <input id="infobox" size=20 />
   </div>
 </body>
 
@@ -35,9 +35,13 @@
       var north = env.getNorth();
       var south = env.getSouth();
       var east = env.getEast();
-      var west = env.getWest();
+      var west = env.getWest();    
       
-      $('#infobox').val(.lng + ',' + mymap.getCenter().lat);
+      $('#infobox').val();
+      
+      // Different ways of presenting the envelope
+      // TODO
+      // also need to accept coords pasted in any box
     });
   </script>
    
