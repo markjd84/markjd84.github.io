@@ -5,11 +5,15 @@
 
 #hoverbox {
   z-index: 999;
-  height: 30%;
-  width: 20%;
-  top: 5%;
-  left: 3%;
+  position: absolute;
   
+  height: 50%;
+  width: 15%;
+  top: 25%;
+  left: 1%;
+  
+  border: 0px;
+  padding: 5px;
   background:white;   
   border-radius:5px; 
 }
