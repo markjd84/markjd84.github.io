@@ -7,13 +7,13 @@
   z-index: 999;
   position: absolute;
   
-  height: 50%;
-  width: 15%;
-  top: 25%;
+  height: 200px;
+  width: 97%;
+  bottom: 4%;
   left: 1%;
   
   border: 0px;
-  padding: 5px;
+  padding: 10px;
   background:white;   
   border-radius:5px; 
 }
