@@ -31,7 +31,7 @@
     }).addTo(mymap);
     
     mymap.on('moveend', function (evt) {
-      $('#infobox').val(evt.latlng.lon + ',' + evt.latlng.lat);
+      $('#infobox').val(mymap.getCenter().lon + ',' + mymap.getCenter().lat);
     });
   </script>
    
