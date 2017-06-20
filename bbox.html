@@ -31,7 +31,13 @@
     }).addTo(mymap);
     
     mymap.on('moveend', function (evt) {
-      $('#infobox').val(mymap.getCenter().lng + ',' + mymap.getCenter().lat);
+      var env = mymap.getBounds();     
+      var north = env.getNorth();
+      var south = env.getSouth();
+      var east = env.getEast();
+      var west = env.getWest();
+      
+      $('#infobox').val(.lng + ',' + mymap.getCenter().lat);
     });
   </script>
    
