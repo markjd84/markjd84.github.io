@@ -30,8 +30,8 @@
         accessToken: 'pk.eyJ1IjoibWFya2pkNCIsImEiOiJiMDNjN2FmOWQxZTViNzYyMmM0ZjRjMTA0OTI1YzU2OSJ9.GLfuFQPr-W1vM3OmGQp8SQ'
     }).addTo(mymap);
     
-    mymap.on('move', function (evt) {
-      $('#infobox').val(evt.lon + ',' + evt.lat);
+    mymap.on('moveend', function (evt) {
+      $('#infobox').val(evt.latlng.lon + ',' + evt.latlng.lat);
     });
   </script>
    
