@@ -8,7 +8,8 @@
 <body>
   <div id="mapid"></div>
   <div id="hoverbox">
-    <input id="infobox" size=20 />
+    <label for="wkt-box">WKT </label> <input id="wkt-box" class="form-control" size=20 /><br/>
+    <label for="csv-box">CSV </label> <textarea id="csv-box" class="form-control" />
   </div>
 </body>
 
@@ -37,7 +38,10 @@
       var east = env.getEast();
       var west = env.getWest();    
       
-      $('#infobox').val();
+      var wkt = "POLYGON (" + west + "," + south + " " + east + "," + north + ")";
+      var csv = "west, south, east, north\n" + west + "," + south + "," + east + "," + north;
+      $('#wkt-box').val(wkt);
+      $('#csv-box').val(csv);
       
       // Different ways of presenting the envelope
       // TODO
